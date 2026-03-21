@@ -8,12 +8,13 @@ export const heroData = {
 
 export const aboutData = {
   bio: "I am an AI/ML Engineer and Python Developer passionate about building intelligent systems that solve real-world problems. Currently working as an ML & AI Intern at White And Box, I specialize in LLM-powered applications, RAG workflows, Agentic AI, and deep learning pipelines.",
-  photo_url: "/kartavya_ai_eng (1).pdf", // Or any valid profile image URL if provided later
+  photo_url: "/kartavya1.jpg", // Profile image
 };
+
 
 export const statsData = [
   { id: 1, label: "Certifications", value: "6+" },
-  { id: 2, label: "Projects", value: "3+" },
+  { id: 2, label: "Projects", value: "13+" },
   { id: 3, label: "Publications", value: "1" },
   { id: 4, label: "Grad Year", value: "2026" },
 ];

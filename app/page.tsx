@@ -58,7 +58,7 @@ export default function Home() {
             <a href="#projects" className="btn-primary flex items-center gap-2">
               {heroData.cta_primary} <ArrowRight size={16} />
             </a>
-            <a href="/kartavya_ai_eng (1).pdf" download className="btn-ghost flex items-center gap-2">
+            <a href="/Kartavya_Baluja.pdf" download className="btn-ghost flex items-center gap-2">
               <Download size={16} /> {heroData.cta_secondary}
             </a>
           </div>
