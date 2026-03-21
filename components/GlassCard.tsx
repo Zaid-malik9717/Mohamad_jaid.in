@@ -11,9 +11,16 @@ interface GlassCardProps extends HTMLAttributes<HTMLDivElement> {
 export default function GlassCard({ children, glow = true, className = "", ...props }: GlassCardProps) {
   return (
     <motion.div
-      whileHover={glow ? { boxShadow: "0 0 30px rgba(0,229,255,0.15)", borderColor: "rgba(0,229,255,0.35)" } : undefined}
+      whileHover={
+        glow
+          ? {
+              boxShadow: "0 0 40px rgba(0,245,255,0.12), 0 0 80px rgba(123,47,255,0.06)",
+              borderColor: "rgba(0,245,255,0.25)",
+            }
+          : undefined
+      }
       className={`glass-card ${className}`}
-      transition={{ duration: 0.25 }}
+      transition={{ duration: 0.3 }}
       {...(props as any)}
     >
       {children}

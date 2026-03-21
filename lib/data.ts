@@ -106,10 +106,12 @@ export const certificationsData = [
   { id: 4, title: "Salesforce Certified AI Associate", issuer: "Salesforce", year: 2024, credential_url: "", is_featured: false },
   { id: 5, title: "Neo4j Certified Professional", issuer: "Neo4j", year: 2024, credential_url: "", is_featured: false },
   { id: 6, title: "Artificial Intelligence Primer Certification", issuer: "Infosys Springboard", year: 2024, credential_url: "", is_featured: false },
+  { id: 7, title: "Google AI Professional", issuer: "Google", year: 2024, credential_url: "", is_featured: false },
 ];
 
 export const educationData = [
   { id: 1, degree: "Bachelor of Technology in Computer Science", university: "Geeta University", location: "India", expected_date: "2026-08-01", status: "In Progress" },
+  { id: 2, degree: "Intermediate, Science", university: "LCRT public school", location: "India", expected_date: "March 2021 - March 2022", status: "Completed" },
 ];
 
 export const publicationData = {
@@ -127,5 +129,11 @@ export const contactData = {
 };
 
 export const liveLinksData = [
-  // Add live projects here manually when ready
+  {
+    id: 1,
+    title: "Assessment Platform",
+    description: "A comprehensive online assessment and examination platform for students and educators at Geeta University. Features automated grading, real-time results, and detailed performance analytics.",
+    url: "https://assessments.kartavyabaluja.in/",
+    tech_stack: ["Python", "FastAPI", "React", "AI/ML"],
+  },
 ];

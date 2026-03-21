@@ -1,31 +1,37 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans, Fira_Code } from "next/font/google";
+import { Orbitron, Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import NeuralBackground from "@/components/NeuralBackground";
+import CustomCursor from "@/components/CustomCursor";
 import { Toaster } from "react-hot-toast";
 
-const syne = Syne({
+const orbitron = Orbitron({
   subsets: ["latin"],
-  variable: "--font-syne",
-  weight: ["400", "600", "700", "800"],
+  variable: "--font-orbitron",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const dmSans = DM_Sans({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-space",
   weight: ["400", "500", "600", "700"],
 });
 
-const firaCode = Fira_Code({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-fira-code",
-  weight: ["400", "500"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Kartavya Baluja — AI/ML Engineer",
   description:
     "Portfolio of Kartavya Baluja, AI/ML Engineer & Python Developer specialising in LLMs, RAG, Agentic AI, and Deep Learning.",
+  icons: {
+    icon: "/Gemini_Generated_Image_b6kttcb6kttcb6kt.png",
+    apple: "/Gemini_Generated_Image_b6kttcb6kttcb6kt.png",
+  },
   openGraph: {
     title: "Kartavya Baluja — AI/ML Engineer",
     description: "Building intelligent systems with LLMs, RAG, and Deep Learning.",
@@ -39,19 +45,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable} ${firaCode.variable}`}>
+    <html lang="en" className={`${orbitron.variable} ${spaceGrotesk.variable} ${inter.variable}`}>
       <body>
+        <NeuralBackground />
+        <CustomCursor />
         <Navbar />
         <main>{children}</main>
         <Toaster
           position="bottom-right"
           toastOptions={{
             style: {
-              background: "#0d0d18",
-              color: "#F0F0FA",
-              border: "1px solid rgba(0,229,255,0.2)",
+              background: "rgba(2,0,8,0.9)",
+              color: "#e8e8ff",
+              border: "1px solid rgba(0,245,255,0.2)",
               borderRadius: "12px",
-              fontFamily: "var(--font-dm-sans)",
+              backdropFilter: "blur(16px)",
+              fontFamily: "var(--font-inter)",
             },
           }}
         />

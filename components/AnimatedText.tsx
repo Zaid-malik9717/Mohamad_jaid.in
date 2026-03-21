@@ -5,14 +5,16 @@ interface AnimatedTextProps {
   text: string;
   className?: string;
   delay?: number;
+  glitch?: boolean;
 }
 
-export default function AnimatedText({ text, className = "", delay = 0 }: AnimatedTextProps) {
+export default function AnimatedText({ text, className = "", delay = 0, glitch = false }: AnimatedTextProps) {
   const words = text.split(" ");
 
   return (
     <motion.span
-      className={className}
+      className={`${className} ${glitch ? "glitch-text" : ""}`}
+      data-text={glitch ? text : undefined}
       initial="hidden"
       animate="show"
       variants={{
