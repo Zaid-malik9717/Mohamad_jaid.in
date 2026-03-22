@@ -59,23 +59,225 @@ export const skillsData = [
 
 export const projectsData = [
   {
-    id: 1, title: "AI Agent Platform – Multi-Modal LLM Application",
-    description: "Production-ready AI platform integrating multiple Large Language Models for writing, coding, and content generation. Built FastAPI backend with REST API endpoints for seamless frontend-backend communication. Implemented data preprocessing and model orchestration workflows using Pandas and NumPy.",
-    year: 2025, tech_stack: ["Python", "FastAPI", "Streamlit", "LLMs", "Pandas", "NumPy"],
-    github_url: "https://github.com/kartavya4874", live_url: "", thumbnail_url: "", is_featured: true,
+    id: 1,
+    title: "Ai Agent Platform",
+    description: "**Components:** - **Backend** (FastAPI) — API services for AI-powered features. - **Frontend** (Streamlit) — User-facing application interface. - **Database** (SQLite) — Local data persistence. - **En...",
+    year: 2024,
+    tech_stack: ["Python", "Streamlit", "FastAPI"],
+    github_url: "https://github.com/kartavya4874/ai-agent-platform",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: true
   },
   {
-    id: 2, title: "Deep Learning Food Recognition System",
-    description: "Preprocessed and cleaned Food-101 dataset using NumPy and Pandas for deep learning training. Built CNN architecture and fine-tuned InceptionV3 model using TensorFlow and Keras. Achieved high accuracy through hyperparameter optimization and performance analysis.",
-    year: 2024, tech_stack: ["Python", "TensorFlow", "Keras", "CNN", "NumPy", "Pandas"],
-    github_url: "https://github.com/kartavya4874", live_url: "", thumbnail_url: "", is_featured: false,
+    id: 2,
+    title: "Ai Checker",
+    description: "Repository AI-Checker on GitHub.",
+    year: 2024,
+    tech_stack: ["Python"],
+    github_url: "https://github.com/kartavya4874/AI-Checker",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: true
   },
   {
-    id: 3, title: "Aashiyana – AI Chatroom with NLP Moderation",
-    description: "Real-time chat application using Python and FastAPI with integrated NLP-based content filtering. Built data processing pipelines for message analysis and intelligent moderation using ML algorithms.",
-    year: 2025, tech_stack: ["Python", "NLP", "FastAPI", "Git", "GitHub"],
-    github_url: "https://github.com/kartavya4874", live_url: "", thumbnail_url: "", is_featured: false,
+    id: 3,
+    title: "Ai Exam Checker",
+    description: "Universal automated exam evaluation system for universities covering ALL exam types: theory, math, coding, diagrams, and MCQs across all departments.",
+    year: 2024,
+    tech_stack: ["Python", "Streamlit", "FastAPI"],
+    github_url: "https://github.com/kartavya4874/AI-Exam-Checker",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: true
   },
+  {
+    id: 4,
+    title: "Ai Exam_Checker 2",
+    description: "An AI-powered exam evaluation system that processes scanned answer sheets using OCR, specialized content analyzers, and GPT-4o for automated grading.",
+    year: 2024,
+    tech_stack: ["Python", "FastAPI"],
+    github_url: "https://github.com/kartavya4874/AI-Exam_checker-2",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 5,
+    title: "Ai Tutor Avatar",
+    description: "---",
+    year: 2024,
+    tech_stack: ["Python", "Streamlit", "FastAPI"],
+    github_url: "https://github.com/kartavya4874/AI-Tutor-Avatar",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 6,
+    title: "Ai Tutor Avatar 1",
+    description: "Repository AI-Tutor-Avatar-1 on GitHub.",
+    year: 2024,
+    tech_stack: ["Python"],
+    github_url: "https://github.com/kartavya4874/AI-Tutor-Avatar-1",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 7,
+    title: "Asessment  Portal",
+    description: "- **Frontend**: React (Vite) + TailwindCSS + Framer Motion - **Backend**: FastAPI (Python) + Motor (async MongoDB) - **Database**: MongoDB - **File Storage**: Firebase Storage - **Auth**: JWT-based (a...",
+    year: 2024,
+    tech_stack: ["React", "JavaScript", "FastAPI"],
+    github_url: "https://github.com/kartavya4874/Asessment--Portal",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 8,
+    title: "Askgeetai",
+    description: "A production-ready, button-based interactive chatbot for Geeta University, built with **Python (FastAPI)** and **Vanilla HTML/CSS/JS**.",
+    year: 2024,
+    tech_stack: ["Python", "FastAPI"],
+    github_url: "https://github.com/kartavya4874/AskGeetAI",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 10,
+    title: "Deep",
+    description: "A fully local AI-powered research agent that performs deep research, verification, and synthesis without external APIs.",
+    year: 2024,
+    tech_stack: ["Python"],
+    github_url: "https://github.com/kartavya4874/deep",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 11,
+    title: "Facebook Scraper",
+    description: "Repository facebook-scraper on GitHub.",
+    year: 2024,
+    tech_stack: ["Python"],
+    github_url: "https://github.com/kartavya4874/facebook-scraper",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 12,
+    title: "Fake News Detection",
+    description: "This repository contains a Jupyter Notebook for detecting fake news using machine learning techniques.",
+    year: 2024,
+    tech_stack: ["Jupyter Notebook"],
+    github_url: "https://github.com/kartavya4874/Fake-News-Detection",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 13,
+    title: "Food Recognition",
+    description: "Repository Food-Recognition on GitHub.",
+    year: 2024,
+    tech_stack: ["Jupyter Notebook"],
+    github_url: "https://github.com/kartavya4874/Food-Recognition",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 14,
+    title: "Meetingbot",
+    description: "A **production-ready, multi-user** AI Meeting Attendant system with real-time transcription, live Q&A during meetings, and intelligent meeting analysis powered by Google Gemini API.",
+    year: 2024,
+    tech_stack: ["Python", "Streamlit", "FastAPI"],
+    github_url: "https://github.com/kartavya4874/MeetingBot",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 15,
+    title: "Movie Data Pipeline",
+    description: "Repository movie-data-pipeline on GitHub.",
+    year: 2024,
+    tech_stack: ["Python"],
+    github_url: "https://github.com/kartavya4874/movie-data-pipeline",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 16,
+    title: "My Portfolio",
+    description: "A cinematic dark-themed full-stack portfolio built with **Next.js 14**, **Supabase**, **NextAuth v5**, and **Framer Motion**.",
+    year: 2024,
+    tech_stack: ["React", "TypeScript"],
+    github_url: "https://github.com/kartavya4874/my_portfolio",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 17,
+    title: "Ocr Evaluater",
+    description: "Automated exam evaluation desktop application powered by OpenAI GPT-4o. Faculty double-clicks it and it works.",
+    year: 2024,
+    tech_stack: ["Python", "React", "FastAPI"],
+    github_url: "https://github.com/kartavya4874/ocr_evaluater",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 18,
+    title: "Portfolio",
+    description: "Repository portfolio on GitHub.",
+    year: 2024,
+    tech_stack: ["TypeScript"],
+    github_url: "https://github.com/kartavya4874/portfolio",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 19,
+    title: "Rag Assistant Aaidc",
+    description: "Repository RAG-Assistant-AAIDC on GitHub.",
+    year: 2024,
+    tech_stack: ["Python"],
+    github_url: "https://github.com/kartavya4874/RAG-Assistant---AAIDC",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 20,
+    title: "Sentiment Analysis",
+    description: "Repository Sentiment_analysis on GitHub.",
+    year: 2024,
+    tech_stack: ["Jupyter Notebook"],
+    github_url: "https://github.com/kartavya4874/Sentiment_analysis",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 21,
+    title: "Sign Language",
+    description: "A real-time American Sign Language (ASL) recognition system using computer vision and deep learning to translate hand gestures into text.",
+    year: 2024,
+    tech_stack: ["TensorFlow", "NumPy", "Python"],
+    github_url: "https://github.com/kartavya4874/sign-language",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  }
 ];
 
 export const experienceData = [
