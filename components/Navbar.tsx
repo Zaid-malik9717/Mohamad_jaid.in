@@ -64,7 +64,7 @@ export default function Navbar() {
     <>
       <ScrollProgress />
       <header
-        className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
+        className="fixed top-0 left-0 right-0 z-[100] transition-all duration-500"
         style={{
           background: scrolled ? "rgba(2,0,8,0.8)" : "transparent",
           backdropFilter: scrolled ? "blur(20px)" : "none",
@@ -72,28 +72,7 @@ export default function Navbar() {
           borderBottom: scrolled ? "1px solid rgba(255,255,255,0.06)" : "1px solid transparent",
         }}
       >
-        <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          {/* Logo */}
-          <a
-            href="#hero"
-            onClick={(e) => handleClick(e, "#hero")}
-            className="relative group outline-none"
-          >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              animate={{ boxShadow: ["0 0 8px rgba(0,245,255,0.3)", "0 0 16px rgba(0,245,255,0.6)", "0 0 8px rgba(0,245,255,0.3)"] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="w-10 h-10 rounded-xl overflow-hidden border border-cyan-500/50 bg-black"
-            >
-              <img 
-                src="/Gemini_Generated_Image_b6kttcb6kttcb6kt.png" 
-                alt="Kartavya Baluja" 
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-          </a>
-
+        <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-end lg:justify-center">
           {/* Desktop links */}
           <ul className="hidden lg:flex items-center gap-1">
             {links.map((l) => {
@@ -142,52 +121,55 @@ export default function Navbar() {
             {open ? <X size={18} /> : <Menu size={18} />}
           </button>
         </nav>
-
-        {/* Mobile menu - fullscreen overlay */}
-        <AnimatePresence>
-          {open && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="lg:hidden fixed inset-0 top-16 z-40"
-              style={{ background: "rgba(2,0,8,0.95)", backdropFilter: "blur(20px)" }}
-            >
-              <ul className="flex flex-col items-center justify-center h-full gap-2 px-6">
-                {links.map((l, i) => (
-                  <motion.li
-                    key={l.href}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.06, duration: 0.3 }}
-                  >
-                    <a
-                      href={l.href}
-                      onClick={(e) => handleClick(e, l.href)}
-                      className="block px-6 py-3 rounded-xl text-lg font-medium transition-all"
-                      style={{
-                        color: activeSection === l.href ? "var(--accent)" : "var(--muted)",
-                        background: activeSection === l.href ? "rgba(0,245,255,0.08)" : "transparent",
-                        fontFamily: "var(--font-space)",
-                      }}
-                    >
-                      {l.href === "#live-links" ? (
-                        <span className="flex items-center justify-center gap-2">
-                          <span className="live-dot" style={{ width: 6, height: 6 }} />
-                          {l.label}
-                        </span>
-                      ) : (
-                        l.label
-                      )}
-                    </a>
-                  </motion.li>
-                ))}
-              </ul>
-            </motion.div>
-          )}
-        </AnimatePresence>
       </header>
+
+      {/* Mobile menu - fullscreen overlay */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="lg:hidden fixed inset-0 top-16 z-[90] overflow-y-auto"
+            style={{ background: "rgba(2,0,8,0.98)", backdropFilter: "blur(24px)", paddingBottom: "2rem" }}
+          >
+            <ul className="flex flex-col items-center flex-1 min-h-full justify-center gap-2 px-6 py-12">
+              {links.map((l, i) => (
+                <motion.li
+                  key={l.href}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.05, duration: 0.3 }}
+                  className="w-full max-w-[280px]"
+                >
+                  <a
+                    href={l.href}
+                    onClick={(e) => handleClick(e, l.href)}
+                    className="block w-full text-center px-6 py-4 rounded-2xl text-xl font-medium transition-all"
+                    style={{
+                      color: activeSection === l.href ? "var(--accent)" : "var(--muted)",
+                      background: activeSection === l.href ? "rgba(0,245,255,0.06)" : "transparent",
+                      border: activeSection === l.href ? "1px solid rgba(0,245,255,0.15)" : "1px solid transparent",
+                      fontFamily: "var(--font-space)",
+                      boxShadow: activeSection === l.href ? "0 0 20px rgba(0,245,255,0.05)" : "none",
+                    }}
+                  >
+                    {l.href === "#live-links" ? (
+                      <span className="flex items-center justify-center gap-2">
+                        <span className="live-dot" style={{ width: 6, height: 6 }} />
+                        {l.label}
+                      </span>
+                    ) : (
+                      l.label
+                    )}
+                  </a>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Add hover effect via CSS for nav links */}
       <style jsx global>{`
