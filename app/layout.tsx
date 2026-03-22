@@ -25,9 +25,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kartavyabaluja.in"),
   title: "Kartavya Baluja — AI/ML Engineer",
   description:
     "Portfolio of Kartavya Baluja, AI/ML Engineer & Python Developer specialising in LLMs, RAG, Agentic AI, and Deep Learning.",
+  keywords: ["Kartavya Baluja", "AI Engineer", "ML Engineer", "Python Developer", "Deep Learning", "LLMs", "RAG", "Agentic AI", "Next.js", "Portfolio"],
+  authors: [{ name: "Kartavya Baluja", url: "https://kartavyabaluja.in" }],
+  creator: "Kartavya Baluja",
   icons: {
     icon: "/Gemini_Generated_Image_b6kttcb6kttcb6kt.png",
     apple: "/Gemini_Generated_Image_b6kttcb6kttcb6kt.png",
@@ -35,7 +39,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kartavya Baluja — AI/ML Engineer",
     description: "Building intelligent systems with LLMs, RAG, and Deep Learning.",
+    url: "https://kartavyabaluja.in",
+    siteName: "Kartavya Baluja Portfolio",
+    images: [{ url: "/Gemini_Generated_Image_b6kttcb6kttcb6kt.png", width: 800, height: 600, alt: "Kartavya Baluja Logo" }],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kartavya Baluja — AI/ML Engineer",
+    description: "Building intelligent systems with LLMs, RAG, and Deep Learning.",
+    images: ["/Gemini_Generated_Image_b6kttcb6kttcb6kt.png"],
   },
 };
 
