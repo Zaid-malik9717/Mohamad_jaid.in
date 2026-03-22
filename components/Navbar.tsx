@@ -64,47 +64,44 @@ export default function Navbar() {
     <>
       <ScrollProgress />
       <header
-        className="fixed top-0 left-0 right-0 z-[100] transition-all duration-500"
-        style={{
-          background: scrolled ? "rgba(2,0,8,0.8)" : "transparent",
-          backdropFilter: scrolled ? "blur(20px)" : "none",
-          WebkitBackdropFilter: scrolled ? "blur(20px)" : "none",
-          borderBottom: scrolled ? "1px solid rgba(255,255,255,0.06)" : "1px solid transparent",
-        }}
+        className={`fixed z-[100] transition-all duration-500 left-1/2 -translate-x-1/2 ${
+          scrolled ? "top-4" : "top-6"
+        } w-[90%] max-w-max`}
       >
-        <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-end lg:justify-center">
+        <nav 
+          className="flex items-center justify-between lg:justify-center gap-4 lg:gap-6 px-4 py-2.5 rounded-full"
+          style={{
+            background: "rgba(255, 255, 255, 0.06)",
+            backdropFilter: "blur(16px)",
+            WebkitBackdropFilter: "blur(16px)",
+            border: "1px solid rgba(255, 255, 255, 0.1)",
+            boxShadow: "0 10px 40px rgba(0, 0, 0, 0.2)",
+          }}
+        >
           {/* Desktop links */}
-          <ul className="hidden lg:flex items-center gap-1">
+          <ul className="hidden lg:flex items-center gap-6 px-2">
             {links.map((l) => {
               const isActive = activeSection === l.href;
+              const isContact = l.href === "#contact";
               return (
                 <li key={l.href}>
                   <a
                     href={l.href}
                     onClick={(e) => handleClick(e, l.href)}
-                    className="nav-link relative px-3 py-1.5 text-sm rounded-lg transition-all duration-300 group"
-                    style={{
-                      color: isActive ? "var(--accent)" : "var(--muted)",
-                      fontWeight: isActive ? 600 : 400,
-                    }}
+                    className={`transition-all duration-300 ${
+                      isContact 
+                        ? "bg-white text-black px-5 py-2 rounded-full flex items-center gap-2 hover:opacity-90 font-medium" 
+                        : "text-sm hover:text-white"
+                    }`}
+                    style={!isContact ? {
+                      color: isActive ? "#fff" : "rgba(255,255,255,0.6)",
+                      fontWeight: isActive ? 500 : 400,
+                    } : {}}
                   >
-                    {l.href === "#live-links" ? (
-                      <span className="flex items-center gap-1.5">
-                        <span className="live-dot" style={{ width: 5, height: 5 }} />
-                        {l.label}
-                      </span>
-                    ) : (
-                      l.label
+                    {l.label}
+                    {isContact && (
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     )}
-                    {/* Hover underline */}
-                    <span
-                      className="absolute bottom-0 left-3 right-3 h-px transition-transform duration-300 origin-left"
-                      style={{
-                        background: "var(--accent)",
-                        transform: isActive ? "scaleX(1)" : "scaleX(0)",
-                        boxShadow: "0 0 6px rgba(0,245,255,0.5)",
-                      }}
-                    />
                   </a>
                 </li>
               );
@@ -113,12 +110,11 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 rounded-lg transition-colors"
-            style={{ color: "var(--accent)", border: "1px solid rgba(0,245,255,0.2)" }}
+            className="lg:hidden p-2 rounded-full transition-colors text-white/80 hover:text-white"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
-            {open ? <X size={18} /> : <Menu size={18} />}
+            {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </nav>
       </header>
@@ -171,16 +167,7 @@ export default function Navbar() {
         )}
       </AnimatePresence>
 
-      {/* Add hover effect via CSS for nav links */}
-      <style jsx global>{`
-        .nav-link:hover {
-          color: var(--accent) !important;
-          text-shadow: 0 0 8px rgba(0,245,255,0.4);
-        }
-        .nav-link:hover span:last-child {
-          transform: scaleX(1) !important;
-        }
-      `}</style>
+
     </>
   );
 }
