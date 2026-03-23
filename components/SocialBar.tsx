@@ -8,7 +8,7 @@ const socials = [
     id: "linkedin",
     label: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/in/kartavya-baluja-214ba1256",
+    href: "www.linkedin.com/in/mohamad-jaid-305797323",
     color: "#0A66C2",
     glow: "rgba(10,102,194,0.4)",
   },
@@ -16,7 +16,7 @@ const socials = [
     id: "github",
     label: "GitHub",
     icon: Github,
-    href: "https://github.com/kartavya4874",
+    href: "https://github.com/Zaid-malik9717",
     color: "#e8e8ff",
     glow: "rgba(232,232,255,0.3)",
   },
@@ -24,7 +24,7 @@ const socials = [
     id: "email",
     label: "Email",
     icon: Mail,
-    href: "mailto:kartavyabaluja453@gmail.com",
+    href: "mailto:zaidmalik1055@gmail.com",
     color: "#00f5ff",
     glow: "rgba(0,245,255,0.4)",
   },
@@ -32,7 +32,7 @@ const socials = [
     id: "whatsapp",
     label: "WhatsApp",
     icon: MessageCircle,
-    href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9138414874"}`,
+    href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9996815786"}`,
     color: "#25D366",
     glow: "rgba(37,211,102,0.4)",
   },
@@ -76,8 +76,8 @@ export default function SocialBar({ labeled = false }: SocialBarProps) {
             borderColor: s.color,
           }}
           className={`flex items-center gap-2 transition-all ${labeled
-              ? "px-5 py-3 rounded-xl text-sm font-medium"
-              : "p-2.5 rounded-xl"
+            ? "px-5 py-3 rounded-xl text-sm font-medium"
+            : "p-2.5 rounded-xl"
             }`}
           style={{
             background: "rgba(255,255,255,0.04)",

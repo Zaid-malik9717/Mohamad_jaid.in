@@ -1,4 +1,4 @@
-# Kartavya Baluja — AI/ML Portfolio Website
+# Mohamad Jaid — AI/ML Portfolio Website
 
 A cinematic dark-themed full-stack portfolio built with **Next.js 14**, **Supabase**, **NextAuth v5**, and **Framer Motion**.
 
@@ -62,7 +62,7 @@ cp .env.local.example .env.local
 | `GOOGLE_CLIENT_ID` | Google OAuth client ID |
 | `GOOGLE_CLIENT_SECRET` | Google OAuth client secret |
 | `ADMIN_EMAIL` | Admin email to whitelist |
-| `NEXT_PUBLIC_WHATSAPP_NUMBER` | WhatsApp number with country code (e.g. `9138414874`) |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | WhatsApp number with country code |
 
 ### 5. Run the dev server
 ```bash
@@ -108,4 +108,4 @@ Admin panels available:
 
 ---
 
-*Kartavya Baluja © 2025 · Built with Python, passion & caffeine*
+*Mohamad Jaid © 2025 · Built with Python, passion & caffeine*
