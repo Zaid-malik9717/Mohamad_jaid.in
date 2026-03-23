@@ -7,7 +7,6 @@ import {
   experienceData,
   certificationsData,
   educationData,
-  publicationData,
   contactData,
   liveLinksData,
 } from "@/lib/data";
@@ -76,7 +75,7 @@ export default function Home() {
               <a href="#projects" className="btn-primary flex items-center gap-2">
                 {heroData.cta_primary} <ArrowRight size={16} />
               </a>
-              <a href="/Kartavya_Baluja.pdf" download className="btn-ghost flex items-center gap-2">
+              <a href="/Mohamad_Jaid.pdf" download className="btn-ghost flex items-center gap-2">
                 <Download size={16} /> {heroData.cta_secondary}
               </a>
             </div>
@@ -284,10 +283,10 @@ export default function Home() {
       </section>
 
       {/* ───────────────────────────────────────────────────────────────── */}
-      {/* 7. EDUCATION & PUBLICATION SECTION */}
+      {/* 7. EDUCATION SECTION */}
       {/* ───────────────────────────────────────────────────────────────── */}
       <section id="education" className="py-24 sm:py-32 border-t section-backdrop" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
-        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+        <div className="max-w-5xl mx-auto px-6">
           
           {/* Education */}
           <div>
@@ -323,35 +322,6 @@ export default function Home() {
                 );
               })}
             </div>
-          </div>
-
-          {/* Publication */}
-          <div id="publication">
-            <ScrollReveal>
-              <h2 className="heading-xl text-3xl sm:text-4xl mb-12">Publication</h2>
-            </ScrollReveal>
-            <ScrollReveal direction="right" delay={0.2} className="relative h-full">
-              <SpotlightCard className="p-8 relative h-full flex flex-col justify-center" highlightColor="rgba(255, 0, 128, 0.15)" borderColor="rgba(255, 0, 128, 0.4)">
-                <div className="absolute -top-8 -left-4 text-[12rem] leading-none select-none pointer-events-none opacity-[0.03] font-bold" style={{ fontFamily: "var(--font-orbitron)", color: "white" }}>"</div>
-                <div className="relative z-10 flex flex-col gap-6">
-                  <h3 className="font-bold text-2xl sm:text-3xl tracking-tight leading-snug" style={{ fontFamily: "var(--font-space)" }}>{publicationData.title}</h3>
-                  <div className="flex flex-col gap-3 border-l-2 pl-5" style={{ borderColor: "rgba(255, 0, 128, 0.5)" }}>
-                    <p className="font-semibold text-pink-400 text-lg">{publicationData.journal}</p>
-                    <p className="text-sm tracking-wide font-medium" style={{ color: "rgba(255,255,255,0.5)" }}>
-                      Vol. {publicationData.volume}, No. {publicationData.issue}, pp. {publicationData.pages} · {publicationData.year}
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2.5 pt-4">
-                    {publicationData.tags?.map((t: string) => <SkillPill key={t} label={t} gold={t.includes("Deep")} />)}
-                  </div>
-                  {publicationData.url && (
-                    <a href={publicationData.url} target="_blank" rel="noopener noreferrer" className="btn-ghost self-start flex items-center gap-2 text-sm mt-4 tracking-wide">
-                      Read Paper &rarr;
-                    </a>
-                  )}
-                </div>
-              </SpotlightCard>
-            </ScrollReveal>
           </div>
 
         </div>

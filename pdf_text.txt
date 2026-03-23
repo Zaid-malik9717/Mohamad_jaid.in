@@ -1,0 +1,93 @@
+MOHAMAD JAID
+Panipat, Haryana, India | Open to International Relocation
+Email: zaidmalik1055@gmail.com | Mobile: +91-9996815786
+LinkedIn: linkedin.com/in/mohamad-jaid-305797323 | GitHub: github.com/Zaid-malik9717
+PROFESSIONAL SUMMARY
+Results-driven AI/ML Engineer with expertise in Generative AI, Large Language Models (LLMs), and Prompt
+Engineering. Skilled in Python development, computer vision, and building scalable AI applications using Azure
+OpenAI, OpenAI API, and modern frameworks. Proven ability to design conversational AI systems, optimize model
+performance, and deliver production-ready solutions. Strong foundation in machine learning, natural language
+processing, and data analytics with hands-on experience in real-world projects and internships.
+TECHNICAL SKILLS
+Programming Languages: Python, C++, SQL
+AI/ML Technologies: Generative AI, Large Language Models (LLMs), Prompt Engineering, Natural Language
+Processing (NLP), Computer Vision, YOLOv8, Machine Learning, Deep Learning
+AI Frameworks & APIs: OpenAI API, Azure OpenAI, Azure Speech Services, GPT-4, ChatGPT, Streamlit,
+TensorFlow, PyTorch
+Data Analytics: Power BI, Tableau, Excel, Data Visualization, SQL, Pandas, NumPy
+Development Tools: Git, GitHub, VS Code, Jupyter Notebook, REST APIs, WebRTC
+Core Competencies: Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), Problem
+Solving, System Design, Agile Development
+EDUCATION
+Bachelor of Technology (Honours) in Computer Science Engineering
+Specialization: Artificial Intelligence and Machine Learning
+Geeta University, Panipat, India
+Expected Graduation: 2026
+CGPA: 7.78/10.0
+Relevant Coursework: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision,
+Data Structures, Algorithms, Database Management Systems, Software Engineering
+PROFESSIONAL EXPERIENCE
+Data Analytics Intern
+June 2024 – August 2024
+Samatrix.io, Gurugram, India
+• Analyzed large datasets using Python, SQL, and Excel to extract actionable business insights
+• Created interactive dashboards in Power BI and Tableau to visualize key performance metrics
+• Collaborated with cross-functional teams to support data-driven decision making
+• Improved data processing efficiency by 30% through automation scripts
+Data Structures & Algorithms Trainee
+June 2024 – August 2024
+Coding Blocks, Noida, India
+• Completed intensive training in advanced algorithms, data structures, and problem-solving techniques
+• Solved 200+ competitive programming problems on platforms like LeetCode and HackerRank
+• Implemented efficient algorithms for sorting, searching, dynamic programming, and graph theory
+Python Development Trainee
+June 2023 – July 2023
+Solitaire Infosys, Mohali, India
+• Developed full-stack Python applications using object-oriented programming principles
+• Built a Restaurant Management System with database integration and GUI interface
+• Gained proficiency in Python libraries including tkinter, SQLite, and pandas
+
+KEY PROJECTS
+AI Avatar Tutor – Interactive Learning Platform
+August 2025 – December 2025
+Technologies: Azure OpenAI, Azure Speech Services, Python, Streamlit, WebRTC
+• Developed an AI-powered avatar tutor with real-time voice interaction using Azure Speech SDK and WebRTC
+• Integrated GPT-4 for intelligent conversational responses with context awareness and memory management
+• Implemented speech-to-text (STT) and text-to-speech (TTS) with multi-language support for global accessibility
+• Built responsive web interface using Streamlit with seamless avatar video rendering and lip-sync
+• Achieved 95% speech recognition accuracy and sub-2-second response latency
+Student Attention Tracking System – Computer Vision Application
+February 2024 – April 2024
+Technologies: YOLOv8, Python, OpenCV, Computer Vision
+• Designed real-time attention monitoring system using YOLOv8 object detection model
+• Detected and classified student behaviors including attentive, distracted, and phone usage with 92% accuracy
+• Implemented webcam-based inference pipeline processing 30 frames per second
+• Created visual analytics dashboard to track engagement patterns and generate reports
+NOVA – Conversational AI Chatbot
+October 2024 – December 2024
+Technologies: OpenAI API, Python, GUI Development, Prompt Engineering
+• Built intelligent chatbot application with advanced prompt engineering techniques
+• Implemented conversational memory and context management for multi-turn dialogues
+• Designed system prompts to optimize response quality, consistency, and user engagement
+• Reduced response time by 40% through efficient API call management and caching
+LLM Prompt Optimization Framework
+Ongoing
+Technologies: OpenAI API, Python, NLP
+• Experimented with prompt engineering techniques for summarization, question answering, and content genera-
+tion
+• Compared outcomes across different prompt templates to identify best practices
+• Developed reusable prompt templates that improved output consistency by 35%
+CERTIFICATIONS & TRAINING
+• 100 Days of Code: Python Pro Bootcamp – Udemy (2024) – Advanced Python Development
+• SQL and SQL for Data Analysis Professional Certificate – Udemy (2024) – Database Management
+• Deloitte Australia Data Analytics Job Simulation – Forage (2024) – Business Analytics
+• Design Thinking – A Primer – NPTEL (2023) – Innovation & Problem Solving
+ACHIEVEMENTS & LEADERSHIP
+• Completed Deloitte job simulation: Created interactive Tableau dashboards for forensic data analysis
+• Active contributor to open-source AI projects on GitHub with 50+ commits
+• University NSS Volunteer (2023–2025): Organized community service initiatives
+• Event Coordinator: Managed logistics for university technical events with 500+ attendees
+ADDITIONAL INFORMATION
+Languages: English (Fluent), Hindi (Native), Urdu (Native)
+Work Authorization: Open to international relocation and work visa sponsorship
+Availability: Immediate (After June 2026 for full-time roles)

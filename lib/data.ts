@@ -1,279 +1,158 @@
 export const heroData = {
-  name: "Kartavya Baluja",
-  tagline: "AI/ML Engineer & Python Developer",
-  subheading: "Building intelligent systems with LLMs, RAG, and Deep Learning",
+  name: "Mohamad Jaid",
+  tagline: "AI/ML Engineer & Prompt Engineer",
+  subheading: "Building scalable AI applications, generative AI systems, and intelligent chatbots",
   cta_primary: "View Projects",
   cta_secondary: "Download Resume",
 };
 
 export const aboutData = {
-  bio: "I am an AI/ML Engineer and Python Developer passionate about building intelligent systems that solve real-world problems. Currently working as an AI Engineer at Geeta Technical Hub, I specialize in LLM-powered applications, RAG workflows, Agentic AI, and deep learning pipelines.",
-  photo_url: "/kartavya1.jpg", // Profile image
+  bio: "Results-driven AI/ML Engineer with expertise in Generative AI, Large Language Models (LLMs), and Prompt Engineering. Skilled in Python development, computer vision, and building scalable AI applications using Azure OpenAI, OpenAI API, and modern frameworks. Proven ability to design conversational AI systems, optimize model performance, and deliver production-ready solutions.",
+  photo_url: "/Mohamad_Jaid.png", // Profile image (please update actual path or filename in public folder)
 };
 
-
 export const statsData = [
-  { id: 1, label: "Certifications", value: "6+" },
-  { id: 2, label: "Projects", value: "13+" },
-  { id: 3, label: "Publications", value: "1" },
+  { id: 1, label: "Certifications", value: "4+" },
+  { id: 2, label: "Projects", value: "10+" },
+  { id: 3, label: "Trainings", value: "3" },
   { id: 4, label: "Grad Year", value: "2026" },
 ];
 
 export const skillsData = [
-  { id: 1, category: "Core Python Skills", label: "Python" },
-  { id: 2, category: "Core Python Skills", label: "Pandas" },
-  { id: 3, category: "Core Python Skills", label: "NumPy" },
-  { id: 4, category: "Core Python Skills", label: "scikit-learn" },
-  { id: 5, category: "Core Python Skills", label: "TensorFlow" },
-  { id: 6, category: "Core Python Skills", label: "Keras" },
-  { id: 7, category: "Web Frameworks", label: "FastAPI" },
-  { id: 8, category: "Web Frameworks", label: "Flask" },
-  { id: 9, category: "Web Frameworks", label: "Django (knowledge)" },
-  { id: 10, category: "AI/ML Technologies", label: "Large Language Models (LLMs)" },
-  { id: 11, category: "AI/ML Technologies", label: "RAG" },
-  { id: 12, category: "AI/ML Technologies", label: "Agentic AI" },
-  { id: 13, category: "AI/ML Technologies", label: "NLP" },
-  { id: 14, category: "AI/ML Technologies", label: "Deep Learning" },
-  { id: 15, category: "Data & Visualization", label: "Data Cleaning" },
-  { id: 16, category: "Data & Visualization", label: "Data Pipelines" },
-  { id: 17, category: "Data & Visualization", label: "Matplotlib" },
-  { id: 18, category: "Data & Visualization", label: "Seaborn" },
-  { id: 19, category: "Data & Visualization", label: "Statistical Analysis" },
-  { id: 20, category: "Databases & APIs", label: "Oracle AI Vector Search" },
-  { id: 21, category: "Databases & APIs", label: "Neo4j" },
-  { id: 22, category: "Databases & APIs", label: "REST APIs" },
-  { id: 23, category: "Databases & APIs", label: "SQL" },
-  { id: 24, category: "Development Tools", label: "Git" },
-  { id: 25, category: "Development Tools", label: "GitHub" },
-  { id: 26, category: "Development Tools", label: "Jupyter Notebooks" },
-  { id: 27, category: "Development Tools", label: "Google Colab" },
-  { id: 28, category: "Development Tools", label: "Linux" },
-  { id: 29, category: "Cloud Platforms", label: "Azure AI" },
-  { id: 30, category: "Cloud Platforms", label: "Oracle Cloud Infrastructure (OCI)" },
-  { id: 31, category: "Cloud Platforms", label: "AWS (basic)" },
-  { id: 32, category: "Cloud Platforms", label: "GCP (basic)" },
-  { id: 33, category: "AI Platforms", label: "Hugging Face" },
-  { id: 34, category: "AI Platforms", label: "IBM Watson" },
-  { id: 35, category: "AI Platforms", label: "Streamlit" },
+  { id: 1, category: "Programming Languages", label: "Python" },
+  { id: 2, category: "Programming Languages", label: "C++" },
+  { id: 3, category: "Programming Languages", label: "SQL" },
+  { id: 4, category: "AI/ML Technologies", label: "Generative AI" },
+  { id: 5, category: "AI/ML Technologies", label: "Large Language Models (LLMs)" },
+  { id: 6, category: "AI/ML Technologies", label: "Prompt Engineering" },
+  { id: 7, category: "AI/ML Technologies", label: "Natural Language Processing (NLP)" },
+  { id: 8, category: "AI/ML Technologies", label: "Computer Vision" },
+  { id: 9, category: "AI/ML Technologies", label: "YOLOv8" },
+  { id: 10, category: "AI/ML Technologies", label: "Machine Learning" },
+  { id: 11, category: "AI/ML Technologies", label: "Deep Learning" },
+  { id: 12, category: "AI Frameworks & APIs", label: "OpenAI API" },
+  { id: 13, category: "AI Frameworks & APIs", label: "Azure OpenAI" },
+  { id: 14, category: "AI Frameworks & APIs", label: "Azure Speech Services" },
+  { id: 15, category: "AI Frameworks & APIs", label: "Streamlit" },
+  { id: 16, category: "AI Frameworks & APIs", label: "TensorFlow" },
+  { id: 17, category: "AI Frameworks & APIs", label: "PyTorch" },
+  { id: 18, category: "Data Analytics", label: "Power BI" },
+  { id: 19, category: "Data Analytics", label: "Tableau" },
+  { id: 20, category: "Data Analytics", label: "Pandas" },
+  { id: 21, category: "Data Analytics", label: "NumPy" },
+  { id: 22, category: "Development Tools", label: "Git & GitHub" },
+  { id: 23, category: "Development Tools", label: "Jupyter Notebook" },
+  { id: 24, category: "Development Tools", label: "REST APIs" },
+  { id: 25, category: "Development Tools", label: "WebRTC" },
 ];
 
 export const projectsData = [
   {
     id: 1,
-    title: "Ai Agent Platform",
-    description: "**Components:** - **Backend** (FastAPI) — API services for AI-powered features. - **Frontend** (Streamlit) — User-facing application interface. - **Database** (SQLite) — Local data persistence. - **En...",
-    year: 2024,
-    tech_stack: ["Python", "Streamlit", "FastAPI"],
-    github_url: "https://github.com/kartavya4874/ai-agent-platform",
+    title: "AI Avatar Tutor",
+    description: "Developed an AI-powered avatar tutor with real-time voice interaction using Azure Speech SDK and WebRTC. Integrated GPT-4 for intelligent conversational responses.",
+    year: 2025,
+    tech_stack: ["Azure OpenAI", "Python", "Streamlit", "WebRTC"],
+    github_url: "https://github.com/Zaid-malik9717/ai-avatar-tutor",
     live_url: "",
     thumbnail_url: "",
     is_featured: true
   },
   {
     id: 2,
-    title: "Ai Checker",
-    description: "Repository AI-Checker on GitHub.",
+    title: "Student Attention Tracking System",
+    description: "Designed real-time attention monitoring system using YOLOv8 object detection model. Detected and classified student behaviors with 92% accuracy.",
     year: 2024,
-    tech_stack: ["Python"],
-    github_url: "https://github.com/kartavya4874/AI-Checker",
+    tech_stack: ["YOLOv8", "Python", "OpenCV", "Computer Vision"],
+    github_url: "https://github.com/Zaid-malik9717",
     live_url: "",
     thumbnail_url: "",
     is_featured: true
   },
   {
     id: 3,
-    title: "Ai Exam Checker",
-    description: "Universal automated exam evaluation system for universities covering ALL exam types: theory, math, coding, diagrams, and MCQs across all departments.",
+    title: "NOVA - Conversational AI Chatbot",
+    description: "Built intelligent chatbot application with advanced prompt engineering techniques and conversational memory for multi-turn dialogues.",
     year: 2024,
-    tech_stack: ["Python", "Streamlit", "FastAPI"],
-    github_url: "https://github.com/kartavya4874/AI-Exam-Checker",
+    tech_stack: ["OpenAI API", "Python", "GUI Development"],
+    github_url: "https://github.com/Zaid-malik9717/NOVA",
     live_url: "",
     thumbnail_url: "",
     is_featured: true
   },
   {
     id: 4,
-    title: "Ai Exam_Checker 2",
-    description: "An AI-powered exam evaluation system that processes scanned answer sheets using OCR, specialized content analyzers, and GPT-4o for automated grading.",
+    title: "LLM Prompt Optimization Framework",
+    description: "Experimented with prompt engineering techniques for summarization, QA, and content generation. Improved accuracy and output consistency by 35%.",
     year: 2024,
-    tech_stack: ["Python", "FastAPI"],
-    github_url: "https://github.com/kartavya4874/AI-Exam_checker-2",
+    tech_stack: ["OpenAI API", "Python", "NLP"],
+    github_url: "https://github.com/Zaid-malik9717",
     live_url: "",
     thumbnail_url: "",
     is_featured: false
   },
   {
     id: 5,
-    title: "Ai Tutor Avatar",
-    description: "---",
+    title: "Donations-Website",
+    description: "Donation website for Masjid and Madarsa's.",
     year: 2024,
-    tech_stack: ["Python", "Streamlit", "FastAPI"],
-    github_url: "https://github.com/kartavya4874/AI-Tutor-Avatar",
+    tech_stack: ["Web Technologies"],
+    github_url: "https://github.com/Zaid-malik9717/Donations-Website",
     live_url: "",
     thumbnail_url: "",
     is_featured: false
   },
   {
     id: 6,
-    title: "Ai Tutor Avatar 1",
-    description: "Repository AI-Tutor-Avatar-1 on GitHub.",
+    title: "Madarsa-Sautul-Qur-an",
+    description: "Donation website for madarsa's.",
     year: 2024,
-    tech_stack: ["Python"],
-    github_url: "https://github.com/kartavya4874/AI-Tutor-Avatar-1",
+    tech_stack: ["Web Technologies"],
+    github_url: "https://github.com/Zaid-malik9717/Madarsa-Sautul-Qur-an",
     live_url: "",
     thumbnail_url: "",
     is_featured: false
   },
   {
     id: 7,
-    title: "Asessment  Portal",
-    description: "- **Frontend**: React (Vite) + TailwindCSS + Framer Motion - **Backend**: FastAPI (Python) + Motor (async MongoDB) - **Database**: MongoDB - **File Storage**: Firebase Storage - **Auth**: JWT-based (a...",
+    title: "OCR Engine Evaluator",
+    description: "Repository for OCR Engine Evaluator.",
     year: 2024,
-    tech_stack: ["React", "JavaScript", "FastAPI"],
-    github_url: "https://github.com/kartavya4874/Asessment--Portal",
+    tech_stack: ["Python"],
+    github_url: "https://github.com/Zaid-malik9717/ocr_engine_evaluator",
     live_url: "",
     thumbnail_url: "",
     is_featured: false
   },
   {
     id: 8,
-    title: "Askgeetai",
-    description: "A production-ready, button-based interactive chatbot for Geeta University, built with **Python (FastAPI)** and **Vanilla HTML/CSS/JS**.",
+    title: "Recipe App",
+    description: "Recipe application project.",
     year: 2024,
-    tech_stack: ["Python", "FastAPI"],
-    github_url: "https://github.com/kartavya4874/AskGeetAI",
+    tech_stack: ["Web Technologies"],
+    github_url: "https://github.com/Zaid-malik9717/recipeapp",
+    live_url: "",
+    thumbnail_url: "",
+    is_featured: false
+  },
+  {
+    id: 9,
+    title: "Portfolio",
+    description: "Personal Portfolio repository.",
+    year: 2024,
+    tech_stack: ["Web Technologies"],
+    github_url: "https://github.com/Zaid-malik9717/Portfolio",
     live_url: "",
     thumbnail_url: "",
     is_featured: false
   },
   {
     id: 10,
-    title: "Deep",
-    description: "A fully local AI-powered research agent that performs deep research, verification, and synthesis without external APIs.",
+    title: "Web",
+    description: "Various Web Technologies project.",
     year: 2024,
-    tech_stack: ["Python"],
-    github_url: "https://github.com/kartavya4874/deep",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 11,
-    title: "Facebook Scraper",
-    description: "Repository facebook-scraper on GitHub.",
-    year: 2024,
-    tech_stack: ["Python"],
-    github_url: "https://github.com/kartavya4874/facebook-scraper",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 12,
-    title: "Fake News Detection",
-    description: "This repository contains a Jupyter Notebook for detecting fake news using machine learning techniques.",
-    year: 2024,
-    tech_stack: ["Jupyter Notebook"],
-    github_url: "https://github.com/kartavya4874/Fake-News-Detection",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 13,
-    title: "Food Recognition",
-    description: "Repository Food-Recognition on GitHub.",
-    year: 2024,
-    tech_stack: ["Jupyter Notebook"],
-    github_url: "https://github.com/kartavya4874/Food-Recognition",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 14,
-    title: "Meetingbot",
-    description: "A **production-ready, multi-user** AI Meeting Attendant system with real-time transcription, live Q&A during meetings, and intelligent meeting analysis powered by Google Gemini API.",
-    year: 2024,
-    tech_stack: ["Python", "Streamlit", "FastAPI"],
-    github_url: "https://github.com/kartavya4874/MeetingBot",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 15,
-    title: "Movie Data Pipeline",
-    description: "Repository movie-data-pipeline on GitHub.",
-    year: 2024,
-    tech_stack: ["Python"],
-    github_url: "https://github.com/kartavya4874/movie-data-pipeline",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 16,
-    title: "My Portfolio",
-    description: "A cinematic dark-themed full-stack portfolio built with **Next.js 14**, **Supabase**, **NextAuth v5**, and **Framer Motion**.",
-    year: 2024,
-    tech_stack: ["React", "TypeScript"],
-    github_url: "https://github.com/kartavya4874/my_portfolio",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 17,
-    title: "Ocr Evaluater",
-    description: "Automated exam evaluation desktop application powered by OpenAI GPT-4o. Faculty double-clicks it and it works.",
-    year: 2024,
-    tech_stack: ["Python", "React", "FastAPI"],
-    github_url: "https://github.com/kartavya4874/ocr_evaluater",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 18,
-    title: "Portfolio",
-    description: "Repository portfolio on GitHub.",
-    year: 2024,
-    tech_stack: ["TypeScript"],
-    github_url: "https://github.com/kartavya4874/portfolio",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 19,
-    title: "Rag Assistant Aaidc",
-    description: "Repository RAG-Assistant-AAIDC on GitHub.",
-    year: 2024,
-    tech_stack: ["Python"],
-    github_url: "https://github.com/kartavya4874/RAG-Assistant---AAIDC",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 20,
-    title: "Sentiment Analysis",
-    description: "Repository Sentiment_analysis on GitHub.",
-    year: 2024,
-    tech_stack: ["Jupyter Notebook"],
-    github_url: "https://github.com/kartavya4874/Sentiment_analysis",
-    live_url: "",
-    thumbnail_url: "",
-    is_featured: false
-  },
-  {
-    id: 21,
-    title: "Sign Language",
-    description: "A real-time American Sign Language (ASL) recognition system using computer vision and deep learning to translate hand gestures into text.",
-    year: 2024,
-    tech_stack: ["TensorFlow", "NumPy", "Python"],
-    github_url: "https://github.com/kartavya4874/sign-language",
+    tech_stack: ["Web Technologies"],
+    github_url: "https://github.com/Zaid-malik9717/web",
     live_url: "",
     thumbnail_url: "",
     is_featured: false
@@ -282,60 +161,53 @@ export const projectsData = [
 
 export const experienceData = [
   {
-    id: 1, role: "AI Engineer", company: "Geeta Technical Hub",
-    location: "India", start_date: "2025-12-01", end_date: null, is_current: true,
+    id: 1, role: "Data Analytics Intern", company: "Samatrix.io",
+    location: "Gurugram, India", start_date: "2024-06-01", end_date: "2024-08-01", is_current: false,
     bullets: [
-      "Working as an AI Engineer developing innovative solutions and technical models."
+      "Analyzed large datasets using Python, SQL, and Excel to extract actionable business insights",
+      "Created interactive dashboards in Power BI and Tableau to visualize key performance metrics",
+      "Collaborated with cross-functional teams to support data-driven decision making",
+      "Improved data processing efficiency by 30% through automation scripts"
     ],
   },
   {
-    id: 2, role: "ML & AI Intern", company: "White And Box – Tech Products & Services",
-    location: "Bengaluru, Karnataka, India", start_date: "2025-06-01", end_date: "2025-12-01", is_current: false,
+    id: 2, role: "Data Structures & Algorithms Trainee", company: "Coding Blocks",
+    location: "Noida, India", start_date: "2024-06-01", end_date: "2024-08-01", is_current: false,
     bullets: [
-      "Build and deploy LLM-powered AI solutions using Python frameworks, focusing on practical business applications",
-      "Develop data pipelines for ML model training and inference using Pandas, NumPy, and TensorFlow",
-      "Collaborate with cross-functional teams to integrate AI features into production environments via REST APIs",
-      "Research and evaluate emerging AI trends including RAG workflows and Agentic AI implementations",
-      "Clean and prepare large datasets for machine learning tasks, ensuring data quality and model performance",
+      "Completed intensive training in advanced algorithms, data structures, and problem-solving techniques",
+      "Solved 200+ competitive programming problems on platforms like LeetCode and HackerRank",
+      "Implemented efficient algorithms for sorting, searching, dynamic programming, and graph theory"
     ],
   },
+  {
+    id: 3, role: "Python Development Trainee", company: "Solitaire Infosys",
+    location: "Mohali, India", start_date: "2023-06-01", end_date: "2023-07-01", is_current: false,
+    bullets: [
+      "Developed full-stack Python applications using object-oriented programming principles",
+      "Built a Restaurant Management System with database integration and GUI interface",
+      "Gained proficiency in Python libraries including tkinter, SQLite, and pandas"
+    ],
+  }
 ];
 
 export const certificationsData = [
-  { id: 1, title: "Microsoft Certified: Azure AI Engineer Associate", issuer: "Microsoft", year: 2025, credential_url: "", is_featured: true },
-  { id: 2, title: "Oracle AI Vector Search Certified Professional", issuer: "Oracle", year: 2025, credential_url: "", is_featured: false },
-  { id: 3, title: "Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate", issuer: "Oracle", year: 2024, credential_url: "", is_featured: false },
-  { id: 4, title: "Salesforce Certified AI Associate", issuer: "Salesforce", year: 2024, credential_url: "", is_featured: false },
-  { id: 5, title: "Neo4j Certified Professional", issuer: "Neo4j", year: 2024, credential_url: "", is_featured: false },
-  { id: 6, title: "Artificial Intelligence Primer Certification", issuer: "Infosys Springboard", year: 2024, credential_url: "", is_featured: false },
-  { id: 7, title: "Google AI Professional", issuer: "Google", year: 2024, credential_url: "", is_featured: false },
+  { id: 1, title: "100 Days of Code: Python Pro Bootcamp", issuer: "Udemy", year: 2024, credential_url: "", is_featured: true },
+  { id: 2, title: "SQL and SQL for Data Analysis Professional Certificate", issuer: "Udemy", year: 2024, credential_url: "", is_featured: false },
+  { id: 3, title: "Deloitte Australia Data Analytics Job Simulation", issuer: "Forage", year: 2024, credential_url: "", is_featured: false },
+  { id: 4, title: "Design Thinking - A Primer", issuer: "NPTEL", year: 2023, credential_url: "", is_featured: false },
 ];
 
 export const educationData = [
-  { id: 1, degree: "Bachelor of Technology in Computer Science", university: "Geeta University", location: "India", expected_date: "2026-08-01", status: "In Progress" },
-  { id: 2, degree: "Intermediate, Science", university: "LCRT public school", location: "India", expected_date: "March 2021 - March 2022", status: "Completed" },
+  { id: 1, degree: "B.Tech (Honours) in Computer Science Engineering (AI & ML)", university: "Geeta University", location: "Panipat, India", expected_date: "2026", status: "In Progress" },
 ];
 
-export const publicationData = {
-  id: 1, title: "Bridging the Accuracy-Explainability Gap: A Survey of Interpretable ML Techniques",
-  journal: "Anveshan: Multidisciplinary Journal of Geeta University",
-  volume: "2", issue: "1", pages: "13–26", year: 2024, url: "",
-  tags: ["Interpretable ML", "Survey", "Explainability", "Deep Learning"],
-};
+
 
 export const contactData = {
-  email: "kartavyabaluja453@gmail.com", phone: "9138414874",
-  linkedin_url: "https://linkedin.com/in/kartavya-baluja-214ba1256",
-  github_url: "https://github.com/kartavya4874",
-  footer_tagline: "Kartavya Baluja © 2025 · Built with Python, passion & caffeine",
+  email: "zaidmalik1055@gmail.com", phone: "+91-9996815786",
+  linkedin_url: "https://linkedin.com/in/mohamad-jaid-305797323",
+  github_url: "https://github.com/Zaid-malik9717",
+  footer_tagline: "Mohamad Jaid © 2026 · Built with Python and Intelligence",
 };
 
-export const liveLinksData = [
-  {
-    id: 1,
-    title: "Assessment Platform",
-    description: "A comprehensive online assessment and examination platform for students and educators at Geeta University. Features automated grading, real-time results, and detailed performance analytics.",
-    url: "https://assessments.kartavyabaluja.in/",
-    tech_stack: ["Python", "FastAPI", "React", "AI/ML"],
-  },
-];
+export const liveLinksData = [];

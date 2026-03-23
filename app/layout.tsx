@@ -25,30 +25,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kartavyabaluja.in"),
-  title: "Kartavya Baluja | AI & Machine Learning Engineer",
+  metadataBase: new URL("https://mohamad-jaid.in"),
+  title: "Mohamad Jaid | AI & Machine Learning Engineer",
   description:
-    "Portfolio of Kartavya Baluja, an AI/ML Engineer specializing in LLMs, RAG, Agentic AI, and Python. Open for collaboration and hiring opportunities.",
+    "Portfolio of Mohamad Jaid, an AI/ML Engineer specializing in LLMs, Generative AI, Computer Vision, and Python. Open for collaboration and hiring opportunities.",
   keywords: [
-    "Kartavya Baluja", "AI Engineer", "Machine Learning Engineer", "Hire AI Developer", 
-    "Python Developer", "Deep Learning", "LLMs", "RAG", "Agentic AI", "Open to Collaborate", 
-    "AI Freelancer", "Machine Learning Consultant", "AI Portfolio", "Prompt Engineer"
+    "Mohamad Jaid", "AI Engineer", "Machine Learning Engineer", "Hire AI Developer", 
+    "Python Developer", "Deep Learning", "LLMs", "Generative AI", "Computer Vision", "Open to Collaborate", 
+    "AI Freelancer", "Prompt Engineer"
   ],
-  authors: [{ name: "Kartavya Baluja", url: "https://kartavyabaluja.in" }],
-  creator: "Kartavya Baluja",
+  authors: [{ name: "Mohamad Jaid", url: "https://mohamad-jaid.in" }],
+  creator: "Mohamad Jaid",
+  icons: {
+    icon: "/Mohamad_Jaid.png",
+  },
   openGraph: {
-    title: "Kartavya Baluja | AI & Machine Learning Engineer",
-    description: "Building intelligent systems with LLMs, RAG, and Deep Learning. Available for hiring and collaboration.",
-    url: "https://kartavyabaluja.in",
-    siteName: "Kartavya Baluja Portfolio",
-    images: [{ url: "/kartavya1.jpg", width: 750, height: 750, alt: "Kartavya Baluja Profile Picture" }],
+    title: "Mohamad Jaid | AI & Machine Learning Engineer",
+    description: "Building intelligent systems with LLMs, Generative AI, and Deep Learning. Available for hiring and collaboration.",
+    url: "https://mohamad-jaid.in",
+    siteName: "Mohamad Jaid Portfolio",
+    images: [{ url: "/Mohamad_Jaid.png", width: 750, height: 750, alt: "Mohamad Jaid Profile Picture" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kartavya Baluja | AI & Machine Learning Engineer",
-    description: "Building intelligent systems with LLMs, RAG, and Deep Learning. Available for hiring and collaboration.",
-    images: ["/kartavya1.jpg"],
+    title: "Mohamad Jaid | AI & Machine Learning Engineer",
+    description: "Building intelligent systems with LLMs, Generative AI, and Deep Learning. Available for hiring and collaboration.",
+    images: ["/Mohamad_Jaid.png"],
   },
 };
 
@@ -60,20 +63,20 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Kartavya Baluja",
+    name: "Mohamad Jaid",
     jobTitle: "AI & Machine Learning Engineer",
-    url: "https://kartavyabaluja.in",
-    image: "https://kartavyabaluja.in/kartavya1.jpg",
+    url: "https://mohamad-jaid.in",
+    image: "https://mohamad-jaid.in/Mohamad_Jaid.png",
     alumniOf: "Geeta University",
     knowsAbout: [
       "Artificial Intelligence",
       "Machine Learning",
       "Python",
       "Large Language Models (LLMs)",
-      "Retrieval-Augmented Generation (RAG)",
-      "Agentic AI",
+      "Generative AI",
+      "Computer Vision",
       "Deep Learning",
-      "FastAPI"
+      "Prompt Engineering"
     ],
     seeks: [
       "Software Engineering Roles",
@@ -82,8 +85,8 @@ export default function RootLayout({
       "Tech Collaborations"
     ],
     sameAs: [
-      "https://github.com/kartavya4874",
-      "https://linkedin.com/in/kartavya-baluja-214ba1256"
+      "https://github.com/Zaid-malik9717",
+      "https://linkedin.com/in/mohamad-jaid-305797323"
     ]
   };
 
