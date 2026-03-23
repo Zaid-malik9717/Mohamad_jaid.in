@@ -33,14 +33,14 @@ export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen">
-      
+
       {/* ───────────────────────────────────────────────────────────────── */}
       {/* 1. HERO SECTION */}
       {/* ───────────────────────────────────────────────────────────────── */}
       <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(to bottom, rgba(2,0,8,0.7) 0%, rgba(2,0,8,0.4) 40%, rgba(2,0,8,0.7) 100%)" }} />
         <div className="relative z-10 max-w-5xl mx-auto px-6 py-20 w-full flex flex-col gap-8">
-          
+
           <ScrollReveal direction="scale">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium" style={{
               border: "1px solid rgba(0,245,255,0.2)",
@@ -153,7 +153,7 @@ export default function Home() {
                 const isLang = category.includes("Language");
                 return (
                   <ScrollReveal key={category} delay={idx * 0.1}>
-                    <SpotlightCard 
+                    <SpotlightCard
                       className="p-8 h-full"
                       highlightColor={isAI ? "rgba(123, 47, 255, 0.2)" : (isLang ? "rgba(0, 245, 255, 0.15)" : "rgba(255, 0, 128, 0.15)")}
                       borderColor={isAI ? "rgba(123, 47, 255, 0.6)" : (isLang ? "rgba(0, 245, 255, 0.6)" : "rgba(255, 0, 128, 0.6)")}
@@ -287,7 +287,7 @@ export default function Home() {
       {/* ───────────────────────────────────────────────────────────────── */}
       <section id="education" className="py-24 sm:py-32 border-t section-backdrop" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
         <div className="max-w-5xl mx-auto px-6">
-          
+
           {/* Education */}
           <div>
             <ScrollReveal>
@@ -295,10 +295,10 @@ export default function Home() {
             </ScrollReveal>
             <div className="flex flex-col gap-8">
               {educationData.map((edu: any) => {
-                const displayDate = edu.expected_date.includes("-") 
-                  ? edu.expected_date 
+                const displayDate = edu.expected_date.includes("-")
+                  ? edu.expected_date
                   : (edu.expected_date ? `Expected ${new Date(edu.expected_date).getFullYear()}` : "");
-                
+
                 return (
                   <ScrollReveal key={edu.id}>
                     <SpotlightCard className="p-8 h-full">
@@ -341,14 +341,14 @@ export default function Home() {
               Open to collaborations, opportunities, and interesting conversations in AI/ML engineering.
             </p>
           </ScrollReveal>
-          
+
           <ScrollReveal delay={0.2}>
             <ContactButtons email={contactData.email} phone={contactData.phone} />
           </ScrollReveal>
 
-            <ScrollReveal direction="scale" delay={0.3}>
-              <SocialBar />
-            </ScrollReveal>
+          <ScrollReveal direction="scale" delay={0.3}>
+            <SocialBar />
+          </ScrollReveal>
         </div>
       </section>
 

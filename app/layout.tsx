@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Mohamad Jaid, an AI/ML Engineer specializing in LLMs, Generative AI, Computer Vision, and Python. Open for collaboration and hiring opportunities.",
   keywords: [
-    "Mohamad Jaid", "AI Engineer", "Machine Learning Engineer", "Hire AI Developer", 
-    "Python Developer", "Deep Learning", "LLMs", "Generative AI", "Computer Vision", "Open to Collaborate", 
+    "Mohamad Jaid", "AI Engineer", "Machine Learning Engineer", "Hire AI Developer",
+    "Python Developer", "Deep Learning", "LLMs", "Generative AI", "Computer Vision", "Open to Collaborate",
     "AI Freelancer", "Prompt Engineer"
   ],
   authors: [{ name: "Mohamad Jaid", url: "https://mohamad-jaid.in" }],
