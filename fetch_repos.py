@@ -2,7 +2,7 @@ import urllib.request
 import json
 import re
 
-url = 'https://api.github.com/users/kartavya4874/repos'
+url = 'https://api.github.com/users/zaid-malik9717/repos'
 headers={'User-Agent': 'Mozilla/5.0'}
 req = urllib.request.Request(url, headers=headers)
 try:
@@ -17,7 +17,7 @@ try:
         language = repo['language'] or 'Python'
         
         # Try to fetch README
-        readme_url = f"https://raw.githubusercontent.com/kartavya4874/{name}/main/README.md"
+        readme_url = f"https://raw.githubusercontent.com/zaid-malik9717/{name}/main/README.md"
         
         readme_content = ""
         try:
@@ -27,7 +27,7 @@ try:
         except urllib.error.HTTPError as e:
             if e.code == 404:
                 # Try master branch
-                readme_url_master = f"https://raw.githubusercontent.com/kartavya4874/{name}/master/README.md"
+                readme_url_master = f"https://raw.githubusercontent.com/zaid-malik9717/{name}/master/README.md"
                 try:
                     req_rm = urllib.request.Request(readme_url_master, headers=headers)
                     with urllib.request.urlopen(req_rm) as rm_response_master:
