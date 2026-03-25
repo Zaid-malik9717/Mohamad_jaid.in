@@ -161,7 +161,17 @@ export const projectsData = [
 
 export const experienceData = [
   {
-    id: 1, role: "Data Analytics Intern", company: "Samatrix.io",
+    id: 1, role: "AI Engineer", company: "Geeta Technical Hub",
+    location: "Haryana,India", start_date: "2025-12-01", end_date: null, is_current: true,
+    bullets: [
+      "Working as an AI Engineer developing innovative solutions and technical models",
+      "Building and deploying Generative AI applications using LLMs, OpenAI API, and Azure OpenAI",
+      "Designing and implementing intelligent chatbots and conversational AI systems",
+      "Developing computer vision solutions and real-time AI-powered applications"
+    ],
+  },
+  {
+    id: 2, role: "Data Analytics Intern", company: "Samatrix.io",
     location: "Gurugram, India", start_date: "2024-06-01", end_date: "2024-08-01", is_current: false,
     bullets: [
       "Analyzed large datasets using Python, SQL, and Excel to extract actionable business insights",
@@ -171,7 +181,7 @@ export const experienceData = [
     ],
   },
   {
-    id: 2, role: "Data Structures & Algorithms Trainee", company: "Coding Blocks",
+    id: 3, role: "Data Structures & Algorithms Trainee", company: "Coding Blocks",
     location: "Noida, India", start_date: "2024-06-01", end_date: "2024-08-01", is_current: false,
     bullets: [
       "Completed intensive training in advanced algorithms, data structures, and problem-solving techniques",
@@ -180,7 +190,7 @@ export const experienceData = [
     ],
   },
   {
-    id: 3, role: "Python Development Trainee", company: "Solitaire Infosys",
+    id: 4, role: "Python Development Trainee", company: "Solitaire Infosys",
     location: "Mohali, India", start_date: "2023-06-01", end_date: "2023-07-01", is_current: false,
     bullets: [
       "Developed full-stack Python applications using object-oriented programming principles",
@@ -198,7 +208,8 @@ export const certificationsData = [
 ];
 
 export const educationData = [
-  { id: 1, degree: "B.Tech (Honours) in Computer Science Engineering (AI & ML)", university: "Geeta University", location: "Panipat, India", expected_date: "2026", status: "In Progress" },
+  { id: 1, degree: "B.Tech (Honours) in Computer Science Engineering (AI & ML)", university: "Geeta University", location: "Panipat, India", year: "2022-2026", status: "In Progress" },
+  { id: 2, degree: "Intermediate (12th) - Science", university: "GSSS, Krishanpura", location: "Panipat, India", year: "2021-2022", status: "Completed" },
 ];
 
 

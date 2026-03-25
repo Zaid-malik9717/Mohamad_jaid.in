@@ -295,9 +295,9 @@ export default function Home() {
             </ScrollReveal>
             <div className="flex flex-col gap-8">
               {educationData.map((edu: any) => {
-                const displayDate = edu.expected_date.includes("-")
-                  ? edu.expected_date
-                  : (edu.expected_date ? `Expected ${new Date(edu.expected_date).getFullYear()}` : "");
+                const displayDate = edu.year.includes("-")
+                  ? edu.year
+                  : (edu.year ? `${new Date(edu.year).getFullYear()}` : "");
 
                 return (
                   <ScrollReveal key={edu.id}>
