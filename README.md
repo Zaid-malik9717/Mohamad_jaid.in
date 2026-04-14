@@ -5,7 +5,7 @@ A cinematic dark-themed full-stack portfolio built with **Next.js 14**, **Supaba
 ## Features
 
 - 🌑 **Cinematic dark theme** — custom design tokens, glassmorphism, Framer Motion animations
-- 📡 **9 public pages**: Home (animated hero + ticker), About, Projects (bento grid), Live Links, Experience (timeline), Certifications (gold shimmer), Education, Publication, Contact
+- 📡 **8 public pages**: Home (animated hero + ticker), About, Projects (bento grid), Live Links, Experience (timeline), Certifications (gold shimmer), Education, Contact
 - 🔒 **Google OAuth admin panel** (`/admin`) — whitelisted email only
 - ✏️ **Full CRUD** for every section via slide-out drawer panels
 - 💬 **Social quick-links**: LinkedIn, GitHub, Email, WhatsApp (on Hero + Contact pages)
@@ -78,7 +78,7 @@ Visit `http://localhost:3000`
 Navigate to `http://localhost:3000/admin` and sign in with your whitelisted Google account.
 
 Admin panels available:
-- Hero, About, Stats, Skills, Projects, Live Links, Experience, Certifications, Education, Publications, Contact
+- Hero, About, Stats, Skills, Projects, Live Links, Experience, Certifications, Education, Contact
 
 ---
 

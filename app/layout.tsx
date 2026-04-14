@@ -4,54 +4,95 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import NeuralBackground from "@/components/NeuralBackground";
 import CustomCursor from "@/components/CustomCursor";
+import JsonLd from "@/components/JsonLd";
 import { Toaster } from "react-hot-toast";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
   variable: "--font-orbitron",
   weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space",
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mohamad-jaid.in"),
-  title: "Mohamad Jaid | AI & Machine Learning Engineer",
-  description:
-    "Portfolio of Mohamad Jaid, an AI/ML Engineer specializing in LLMs, Generative AI, Computer Vision, and Python. Open for collaboration and hiring opportunities.",
-  keywords: [
-    "Mohamad Jaid", "AI Engineer", "Machine Learning Engineer", "Hire AI Developer",
-    "Python Developer", "Deep Learning", "LLMs", "Generative AI", "Computer Vision", "Open to Collaborate",
-    "AI Freelancer", "Prompt Engineer"
-  ],
-  authors: [{ name: "Mohamad Jaid", url: "https://mohamad-jaid.in" }],
-  creator: "Mohamad Jaid",
-  icons: {
-    icon: "/Mohamad_Jaid.png",
+  metadataBase: new URL("https://www.mohamadjaid.in"),
+  title: {
+    default: "Mohamad Jaid | AI/ML Engineer & Developer",
+    template: "%s | Mohamad Jaid",
   },
+  description:
+    "Mohamad Jaid — AI/ML engineer building intelligent, full-stack products. Explore projects, certifications, and experience.",
+  keywords: [
+    "Mohamad Jaid",
+    "AI engineer",
+    "ML engineer",
+    "portfolio",
+    "Next.js developer",
+    "machine learning",
+    "deep learning",
+    "LLMs",
+    "Generative AI",
+    "Computer Vision",
+    "Python Developer",
+    "Prompt Engineer",
+  ],
+  authors: [{ name: "Mohamad Jaid", url: "https://www.mohamadjaid.in" }],
+  creator: "Mohamad Jaid",
   openGraph: {
-    title: "Mohamad Jaid | AI & Machine Learning Engineer",
-    description: "Building intelligent systems with LLMs, Generative AI, and Deep Learning. Available for hiring and collaboration.",
-    url: "https://mohamad-jaid.in",
-    siteName: "Mohamad Jaid Portfolio",
-    images: [{ url: "/Mohamad_Jaid.png", width: 750, height: 750, alt: "Mohamad Jaid Profile Picture" }],
     type: "website",
+    locale: "en_US",
+    url: "https://www.mohamadjaid.in",
+    title: "Mohamad Jaid | AI/ML Engineer & Developer",
+    description:
+      "AI/ML engineer building intelligent, full-stack products. Explore projects, certifications, and experience.",
+    siteName: "Mohamad Jaid Portfolio",
+    images: [
+      {
+        url: "/Mohamad_Jaid.webp",
+        width: 1200,
+        height: 630,
+        alt: "Mohamad Jaid — AI/ML Engineer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohamad Jaid | AI & Machine Learning Engineer",
-    description: "Building intelligent systems with LLMs, Generative AI, and Deep Learning. Available for hiring and collaboration.",
-    images: ["/Mohamad_Jaid.png"],
+    title: "Mohamad Jaid | AI/ML Engineer",
+    description:
+      "AI/ML engineer building intelligent, full-stack products.",
+    images: ["/Mohamad_Jaid.webp"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/Mohamad_Jaid.webp",
+  },
+  alternates: {
+    canonical: "https://www.mohamadjaid.in",
   },
 };
 
@@ -60,43 +101,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Mohamad Jaid",
-    jobTitle: "AI & Machine Learning Engineer",
-    url: "https://mohamad-jaid.in",
-    image: "https://mohamad-jaid.in/Mohamad_Jaid.png",
-    alumniOf: "Geeta University",
-    knowsAbout: [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Python",
-      "Large Language Models (LLMs)",
-      "Generative AI",
-      "Computer Vision",
-      "Deep Learning",
-      "Prompt Engineering"
-    ],
-    seeks: [
-      "Software Engineering Roles",
-      "AI Engineering Roles",
-      "Machine Learning Roles",
-      "Tech Collaborations"
-    ],
-    sameAs: [
-      "https://github.com/Zaid-malik9717",
-      "https://linkedin.com/in/mohamad-jaid-305797323"
-    ]
-  };
-
   return (
     <html lang="en" className={`${orbitron.variable} ${spaceGrotesk.variable} ${inter.variable}`}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd />
       </head>
       <body>
         <NeuralBackground />

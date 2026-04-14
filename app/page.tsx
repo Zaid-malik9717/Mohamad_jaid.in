@@ -128,7 +128,7 @@ export default function Home() {
                 <div className="flex justify-center md:justify-end">
                   <div className="relative w-full max-w-sm aspect-square rounded-2xl overflow-hidden border" style={{ borderColor: "rgba(0,245,255,0.15)", boxShadow: "0 0 30px rgba(0,245,255,0.08)" }}>
                     {aboutData.photo_url ? (
-                      <Image src={aboutData.photo_url} alt={heroData.name} fill className="object-cover" />
+                      <Image src={aboutData.photo_url} alt={`${heroData.name} — AI/ML Engineer profile photo`} fill className="object-cover" priority />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center" style={{ background: "rgba(0,245,255,0.03)" }}>
                         <span className="text-8xl" style={{ fontFamily: "var(--font-orbitron)", color: "rgba(0,245,255,0.2)" }}>KB</span>
@@ -143,7 +143,7 @@ export default function Home() {
           <div>
             <ScrollReveal>
               <div className="flex items-center gap-4 mb-8">
-                <h3 className="heading-xl text-3xl sm:text-4xl">Technical Expertise</h3>
+                <h2 className="heading-xl text-3xl sm:text-4xl">Technical Expertise</h2>
                 <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
               </div>
             </ScrollReveal>
@@ -162,7 +162,7 @@ export default function Home() {
                         <div className="p-3 rounded-xl bg-white/5 border border-white/10 shadow-[0_0_15px_rgba(255,255,255,0.05)]">
                           {isAI ? <BrainCircuit size={24} className="text-[#9d4edd]" /> : (isLang ? <Code2 size={24} className="text-cyan-400" /> : <Layers size={24} className="text-pink-500" />)}
                         </div>
-                        <h4 className="font-bold text-lg leading-tight uppercase tracking-wider" style={{ color: "var(--text)", fontFamily: "var(--font-space)" }}>{category}</h4>
+                        <h3 className="font-bold text-lg leading-tight uppercase tracking-wider" style={{ color: "var(--text)", fontFamily: "var(--font-space)" }}>{category}</h3>
                       </div>
                       <div className="flex flex-wrap gap-2.5">
                         {skillList.map((s: string) => <SkillPill key={s} label={s} gold={isAI && s.includes("LLM")} />)}

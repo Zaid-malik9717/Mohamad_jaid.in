@@ -8,7 +8,7 @@ export const heroData = {
 
 export const aboutData = {
   bio: "Results-driven AI/ML Engineer with expertise in Generative AI, Large Language Models (LLMs), and Prompt Engineering. Skilled in Python development, computer vision, and building scalable AI applications using Azure OpenAI, OpenAI API, and modern frameworks. Proven ability to design conversational AI systems, optimize model performance, and deliver production-ready solutions.",
-  photo_url: "/Mohamad_Jaid.png", // Profile image (please update actual path or filename in public folder)
+  photo_url: "/Mohamad_Jaid.webp", // Profile image (please update actual path or filename in public folder)
 };
 
 export const statsData = [

@@ -8,7 +8,7 @@ const socials = [
     id: "linkedin",
     label: "LinkedIn",
     icon: Linkedin,
-    href: "www.linkedin.com/in/mohamad-jaid-305797323",
+    href: "https://www.linkedin.com/in/mohamad-jaid-305797323",
     color: "#0A66C2",
     glow: "rgba(10,102,194,0.4)",
   },

@@ -13,7 +13,6 @@ const links = [
   { href: "#live-links", label: "Live" },
   { href: "#certifications", label: "Certs" },
   { href: "#education", label: "Education" },
-  { href: "#publication", label: "Publication" },
   { href: "#contact", label: "Contact" },
 ];
 

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 interface Cert {
   id: number;
@@ -42,9 +43,10 @@ export default function CertCard({ cert }: CertCardProps) {
 
       <div className="flex items-start justify-between gap-2">
         <div className="flex items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
             src={logoUrl} 
-            alt={`${issuer} logo`} 
+            alt={`${issuer} certification provider logo`} 
             className="w-8 h-8 rounded-md bg-white/90 p-1 object-contain shrink-0" 
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
           />
