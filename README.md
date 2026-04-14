@@ -108,4 +108,4 @@ Admin panels available:
 
 ---
 
-*Mohamad Jaid © 2025 · Built with Python, passion & caffeine*
+*Mohamad Jaid © 2026 · Built with Python, passion & caffeine*
